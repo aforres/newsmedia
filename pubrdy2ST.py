@@ -1,7 +1,7 @@
 #pubrdy2ST.py ver 001 20240807
 import streamlit as st
 i = open('./publishready2ST.txt','r')
-i = i.decode('utf-8').encode('ascii', 'replace') 
+# i = i.decode('utf-8').encode('ascii', 'replace') 
 l = i.readlines()
 i.close()
 
@@ -18,7 +18,7 @@ for x in range(len(l)):
         
         #o = open('C:\\tempstore0\\temp' + str(x) +'.txt','w')
         for y in range(len(story)):
-            # story[y] = story[y].decode('utf-8').encode('ascii', 'replace')            
+            story[y] = story[y].encode('ascii', 'replace')            
             story[y] = str.replace(story[y],'\xa0','')
             story[y] = str.replace(story[y],'\xa02','')
             story[y] = str.replace(story[y],'        ',"\n\n")
