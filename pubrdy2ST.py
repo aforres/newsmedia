@@ -13,11 +13,11 @@ for x in range(len(l)):
         finish = x
 
         story = l[begin+3:finish-1]
-        story = story.decode('utf-8').encode('ascii', 'replace')
+        
         
         #o = open('C:\\tempstore0\\temp' + str(x) +'.txt','w')
         for y in range(len(story)):
-            
+            story[y] = story[y].decode('utf-8').encode('ascii', 'replace')            
             story[y] = str.replace(story[y],'\xa0','')
             story[y] = str.replace(story[y],'\xa02','')
             story[y] = str.replace(story[y],'        ',"\n\n")
