@@ -19,10 +19,10 @@ for x in range(len(l)):
         #o = open('C:\\tempstore0\\temp' + str(x) +'.txt','w')
         for y in range(len(story)):
             story[y] = story[y].encode('ascii', 'replace')            
-            story[y] = str.replace(story[y],'\xa0','')
-            story[y] = str.replace(story[y],'\xa02','')
-            story[y] = str.replace(story[y],'        ',"\n\n")
-            story[y] = str.replace(story[y],'$','USD')
+            #story[y] = str.replace(story[y],'\xa0','')
+            #story[y] = str.replace(story[y],'\xa02','')
+            #story[y] = str.replace(story[y],'        ',"\n\n")
+            #story[y] = str.replace(story[y],'$','USD')
             #story[y] = str.replace(story[y],'(RWE)','(RWE)')
             story[y] = '\n\n' + story[y]
 
