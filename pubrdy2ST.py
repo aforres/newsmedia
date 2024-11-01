@@ -1,6 +1,6 @@
 #pubrdy2ST.py ver 001 20240807
 import streamlit as st
-i = open('C:\\RWE\\publishready.txt','r')
+i = open('./publishready.txt','r')
 l = i.readlines()
 i.close()
 
