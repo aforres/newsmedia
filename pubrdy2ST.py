@@ -11,10 +11,9 @@ for x in range(len(l)):
         
     if l[x][0:4] == '!END':
         finish = x
-        #print(str(x))
 
         story = l[begin+3:finish-1]
-        #story = str(story.encode('utf-8'))
+        story = story.decode('utf-8').encode('ascii', 'replace')
         
         #o = open('C:\\tempstore0\\temp' + str(x) +'.txt','w')
         for y in range(len(story)):
