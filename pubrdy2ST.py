@@ -21,17 +21,17 @@ for x in range(len(l)):
         finish = x
 
         story = l[begin+3:finish-1]
-        story = str(story, encoding='utf-8')
+        sstory = str(story, encoding='utf-8')
         
         #o = open('C:\\tempstore0\\temp' + str(x) +'.txt','w')
-        for y in range(len(story)):
+        for y in range(len(sstory)):
                     
-            story[y] = str.replace(story[y],'\xa0','')
-            story[y] = str.replace(story[y],'\xa02','')
-            story[y] = str.replace(story[y],'        ',"\n\n")
-            story[y] = str.replace(story[y],'$','USD')
-            story[y] = str.replace(story[y],'(RWE)','(RWE)')
-            story[y] = '\n\n' + story[y]
+            sstory[y] = str.replace(sstory[y],'\xa0','')
+            sstory[y] = str.replace(sstory[y],'\xa02','')
+            sstory[y] = str.replace(sstory[y],'        ',"\n\n")
+            sstory[y] = str.replace(sstory[y],'$','USD')
+            sstory[y] = str.replace(sstory[y],'(RWE)','(RWE)')
+            sstory[y] = '\n\n' + sstory[y]
 
             #o.write(story[y])
             
@@ -40,7 +40,7 @@ for x in range(len(l)):
         #st.markdown("<b>Your bold text here</b>", unsafe_allow_html=True)
         #st.markdown("<b>" + headline + "</b>", unsafe_allow_html=True)
         st.subheader(headline)
-        st.markdown('\n'.join(story))
+        st.markdown('\n'.join(sstory))
         st.divider()
         #o.close()
             
