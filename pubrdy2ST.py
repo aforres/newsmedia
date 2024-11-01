@@ -5,6 +5,13 @@ i = open('./publishready2ST.txt','r')
 l = i.readlines()
 i.close()
 
+# Define a byte string
+# byte_string = b"Hello, world!"
+# Convert the byte string to a string using the str() constructor
+# string = str(byte_string, encoding='utf-8')
+# Print the string
+# print(string)
+
 for x in range(len(l)):
     if l[x][0:4] == '!STD':
         begin = x
@@ -14,16 +21,16 @@ for x in range(len(l)):
         finish = x
 
         story = l[begin+3:finish-1]
-        
+        story = str(story, encoding='utf-8')
         
         #o = open('C:\\tempstore0\\temp' + str(x) +'.txt','w')
         for y in range(len(story)):
-            story[y] = story[y].encode('ascii', 'replace')            
-            #story[y] = str.replace(story[y],'\xa0','')
-            #story[y] = str.replace(story[y],'\xa02','')
-            #story[y] = str.replace(story[y],'        ',"\n\n")
-            #story[y] = str.replace(story[y],'$','USD')
-            #story[y] = str.replace(story[y],'(RWE)','(RWE)')
+                    
+            story[y] = str.replace(story[y],'\xa0','')
+            story[y] = str.replace(story[y],'\xa02','')
+            story[y] = str.replace(story[y],'        ',"\n\n")
+            story[y] = str.replace(story[y],'$','USD')
+            story[y] = str.replace(story[y],'(RWE)','(RWE)')
             story[y] = '\n\n' + story[y]
 
             #o.write(story[y])
