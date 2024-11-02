@@ -41,13 +41,7 @@ for x in range(len(l)):
             ("Email", "Home phone", "Mobile phone")
         )
         
-        # Using "with" notation
-        # with st.sidebar:
-        #    add_radio = st.radio(
-        #        "Choose a shipping method",
-        #        ("Standard (5-15 days)", "Express (2-5 days)")
-        #    )
-            
+           
         st.subheader(headline)
         st.markdown('\n'.join(story))
         st.divider()
