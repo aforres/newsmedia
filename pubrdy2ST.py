@@ -33,10 +33,6 @@ for x in range(len(l)):
             story[y] = str.replace(story[y],'$','USD')
             story[y] = str.replace(story[y],'(RWE)','(RWE)')
             story[y] = '\n\n' + story[y]
-
-        # Using object notation
-        st.sidebar("Sidebar Area" )
-        
            
         st.subheader(headline)
         st.markdown('\n'.join(story))
