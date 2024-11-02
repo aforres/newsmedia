@@ -12,7 +12,7 @@ i.close()
 # Print the string
 # print(string)
 
-st.title('Experimental Resources News')
+st.write('Experimental Resources News')
 
 for x in range(len(l)):
     if l[x][0:4] == '!STD':
@@ -45,7 +45,6 @@ for x in range(len(l)):
         st.subheader(headline)
         st.markdown('\n'.join(story))
         st.divider()
-        #o.close()
             
             
 
