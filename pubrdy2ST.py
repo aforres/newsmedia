@@ -35,7 +35,7 @@ for x in range(len(l)):
             story[y] = '\n\n' + story[y]
 
         # Using object notation
-        st.sidebar("How would you like to be contacted for a short survey?" )
+        st.sidebar("Sidebar Area" )
         
            
         st.subheader(headline)
