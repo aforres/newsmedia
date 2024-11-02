@@ -12,7 +12,6 @@ i.close()
 # Print the string
 # print(string)
 
-st.write('Experimental Resources News')
 
 for x in range(len(l)):
     if l[x][0:4] == '!STD':
