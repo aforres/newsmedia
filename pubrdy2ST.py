@@ -35,10 +35,7 @@ for x in range(len(l)):
             story[y] = '\n\n' + story[y]
 
         # Using object notation
-        add_selectbox = st.sidebar.selectbox(
-            "How would you like to be contacted for a short survey?",
-            ("Email", "Home phone", "Mobile phone")
-        )
+        st.sidebar("How would you like to be contacted for a short survey?" )
         
            
         st.subheader(headline)
